@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradiciones Mexicanas - Día de Muertos</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff7e6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #e85a4f;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1, h2 {
+            font-family: "Georgia", serif;
+        }
+
+        main {
+            padding: 40px 10%;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        .bloque {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .bloque img {
+            flex: 1 1 350px;
+            max-width: 450px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .bloque img:hover {
+            transform: scale(1.05);
+        }
+
+        .texto {
+            flex: 1 1 400px;
+            text-align: justify;
+            line-height: 1.6em;
+        }
+
+        .lugares-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .lugar-card {
+            background-color: #ffffff;
+            border: 1px solid #e85a4f;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .lugar-card h3 {
+            color: #e85a4f;
+            margin-top: 0;
+        }
+
+        .lugar-card ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        /* Estilos para los enlaces */
+        a {
+            color: #d8433d; /* Un color de enlace que combine con el diseño */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #ff9800; /* Color al pasar el ratón */
+            text-decoration: underline;
+        }
+
+
+        @media (max-width: 768px) {
+            main {
+                padding: 20px;
+            }
+
+            .bloque {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .texto {
+                text-align: justify;
+            }
+
+            .lugares-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Día de Muertos </h1>
+        <nav>
+            <a href="#dia-de-muertos" style="color:white; margin: 0 15px;">La Tradición</a> |
+            <a href="#lugares-turisticos" style="color:white; margin: 0 15px;">Lugares Turísticos</a> |
+            <a href="#catrina" style="color:white; margin: 0 15px;">La Catrina</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="dia-de-muertos">
+            <h2>El Día de Muertos</h2>
+            
+            <div class="bloque">
+                <div class="texto">
+                    <p>
+                        El <strong>Día de Muertos</strong> es una de las tradiciones más emblemáticas de México y ha sido reconocida por la <a href="https://ich.unesco.org/es/RL/las-fiestas-indigenas-dedicadas-a-los-muertos-00054" target="_blank" rel="noopener noreferrer"><strong>UNESCO</strong> como Patrimonio Cultural Inmaterial de la Humanidad</a> (enlace externo). 
+                        Se celebra el <strong>1 y 2 de noviembre</strong>, coincidiendo con las festividades católicas de Todos los Santos y los Fieles Difuntos.
+                    </p>
+                    <p>
+                        Durante estos días, los hogares mexicanos se llenan de color y significado con las <em>ofrendas</em> o <em>altares</em>, donde se colocan fotografías, veladoras, <a href="https://es.wikipedia.org/wiki/Tagetes_erecta" target="_blank" rel="noopener noreferrer">flores de cempasúchil</a>, pan de muerto, calaveritas de azúcar y los platillos favoritos de los seres queridos que ya partieron.
+                    </p>
+                    <p>
+                        Más allá de ser una fecha de tristeza, el Día de Muertos es una <strong>celebración de la vida</strong>, del ciclo natural de la existencia, y una oportunidad para mantener viva la memoria de aquellos que amamos. 
+                        En pueblos y ciudades, se realizan desfiles, concursos de altares y vistosos tapetes de aserrín. Para conocer dónde vivir la tradición, visita nuestra sección de <a href="#lugares-turisticos">Lugares Turísticos</a> (enlace interno).
+                    </p>
+                </div>
+
+                <img src="images.jpg" alt="Ofrenda de Día de Muertos con calaveras y flores de cempasúchil">
+            </div>
+        </section>
+        
+        <section id="lugares-turisticos">
+            <h2>Lugares Tradicionales para Celebrar</h2>
+            <p>Aunque la tradición se celebra en todo México, existen lugares icónicos conocidos por su especial fervor y belleza durante el Día de Muertos. Aquí algunos de los más visitados, con costos de entrada aproximados a lugares culturales relacionados (los eventos de Día de Muertos en sí, como desfiles y ofrendas públicas, suelen ser gratuitos).</p>
+
+            <div class="lugares-grid">
+                <div class="lugar-card">
+                    <h3>San Andrés Mixquic, CDMX</h3>
+                    <p>Un antiguo pueblo que se convierte en el epicentro de la celebración en la Ciudad de México. Es famoso por la <strong>"Alumbrada"</strong>, cuando el panteón se ilumina con miles de veladoras.</p>
+                    <p><strong>Costo de Entrada:</strong></p>
+                    <ul>
+                        <li>La visita al panteón y eventos es generalmente <strong>gratuita</strong>.</li>
+                        <li>Puede haber costos por acceso a eventos especiales o recorridos guiados locales.</li>
+                    </ul>
+                </div>
+
+                <div class="lugar-card">
+                    <h3>Lago de Pátzcuaro e Isla de Janitzio, Mich.</h3>
+                    <p>Conocido mundialmente, aquí la tradición purépecha cobra vida. La ceremonia en la <a href="https://es.wikipedia.org/wiki/Isla_de_Janitzio" target="_blank" rel="noopener noreferrer">Isla de Janitzio</a> (enlace externo) y la navegación en canoas con luces son imperdibles.</p>
+                    <p><strong>Costo de Entrada:</strong></p>
+                    <ul>
+                        <li>Acceso a eventos y panteones: <strong>Gratuito</strong> o donativo.</li>
+                        <li>Costo de la Trajinera a Janitzio: Varía (aproximadamente $100 - $150 MXN por persona).</li>
+                    </ul>
+                </div>
+
+                <div class="lugar-card">
+                    <h3>Museo Dolores Olmedo y Anahuacalli, CDMX</h3>
+                    <p>Estos museos (uno en Xochimilco y el otro en Coyoacán) suelen montar ofrendas monumentales en honor a <strong>Diego Rivera y Frida Kahlo</strong>. Son un gran complemento cultural.</p>
+                    <p><strong>Costo de Entrada (aproximado):</strong></p>
+                    <ul>
+                        <li>General Nacional: $50 - $80 MXN.</li>
+                        <li>Extranjeros: $100 - $120 MXN.</li>
+                        <li>Estudiantes/Maestros/INAPAM: Descuentos disponibles.</li>
+                    </ul>
+                </div>
+
+            </div>
+            <p style="font-size: 0.8em; margin-top: 15px;">*Los costos son aproximados y pueden variar por temporada o evento especial. Es recomendable <a href="https://www.google.com/search?q=costo+entrada+tur%C3%ADstica+d%C3%ADa+de+muertos+m%C3%A9xico" target="_blank" rel="noopener noreferrer">consultar sitios oficiales</a> antes de planear su visita.</p>
+        </section>
+        
+        <section id="catrina">
+            <h2>Origen de la Catrina</h2>
+
+            <div class="bloque">
+
+                <img src="catrina.jpg" alt="Ilustración o fotografía de una Catrina elegantemente vestida">
+                
+                <div class="texto">
+                    <p>
+                        La <strong>Catrina</strong> es sin duda el personaje más famoso del Día de Muertos. Su historia se remonta a principios del siglo XX, cuando el grabador <a href="https://es.wikipedia.org/wiki/Jos%C3%A9_Guadalupe_Posada" target="_blank" rel="noopener noreferrer"><strong>José Guadalupe Posada</strong></a> (enlace externo) creó la famosa ilustración llamada <em>“La Calavera Garbancera”</em>.
+                        En ella, se representaba una calavera vestida con sombrero elegante, en tono de burla hacia las personas que renegaban de su origen indígena.
+                    </p>
+                    <p>
+                        Años más tarde, el muralista <strong>Diego Rivera</strong> la retomó y le dio el nombre con el que hoy la conocemos: <strong>La Catrina</strong>. En su obra <em>“Sueño de una tarde dominical en la Alameda Central”</em>, Rivera la pintó con un vestido elegante, acompañando a personajes de la historia mexicana.
+                    </p>
+                    <p>
+                        Hoy, la Catrina simboliza la <strong>igualdad ante la muerte</strong> y la belleza de aceptar nuestro destino con una sonrisa. 
+                        Cada año, miles de personas se maquillan y se visten como ella para rendir homenaje a esta icónica figura de la cultura mexicana.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tradiciones Mexicanas. Todos los derechos reservados.</p>
+        <p>Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO.</p>
+    </footer>
+</body>
+</html>
